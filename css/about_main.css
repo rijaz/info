@@ -37,7 +37,7 @@ header {
 	float: left;
 	/*Top right bottom left*/
 	margin: 0 0 30px 0;
-	/*Separates teext without removing margin from top of 
+	/*Separates text without removing margin from top of 
 	page*/
 	padding: 5px 0 0 0;
 	/*So element stretches across entire page*/
@@ -147,7 +147,7 @@ PAGE: WHO AM I?
 	display: inline-block;
 	float: center;
 	margin: 0 15px 30px;
-	padding: 10px 10px 25px;
+	padding: 10px 10px 15px;
 	text-align: center;
 	text-decoration: none;
 	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -157,7 +157,7 @@ PAGE: WHO AM I?
 	-.moz-transition: all .15s linear;
 	transition: all .15s linear;
 	z-index:0;
-/*    position: relative;*/	
+    position: relative;	
 }
 
 .polaroid-images a:after {
@@ -165,7 +165,8 @@ PAGE: WHO AM I?
 	font-size: 15px;
 	content: attr(title);
 	position: relative;
-	top:15px;
+	line-height: 1
+	top:0px;
 }
 
 .polaroid-images img { 
@@ -174,6 +175,19 @@ PAGE: WHO AM I?
 	width: inherit; 
 }
 
+.polaroid-images a:nth-child(n)
+{
+	-webkit-transform: rotate(-10deg);  
+	-moz-transform: rotate(-10deg); 
+	transform: rotate(-10deg); 
+}
+
+.polaroid-images a:nth-child(2n)
+{
+	-webkit-transform: rotate(4deg);  
+	-moz-transform: rotate(4deg); 
+	transform: rotate(4deg); 
+}
 
 .polaroid-images a:nth-child(2n)
 {
@@ -219,14 +233,19 @@ PAGE: WHO AM I?
 COLORS
 *****************************/
 
+.polaroid-images{
+	background-image: url(../img/wood4.jpg);
+}
+
+
 /* Site body */
 body{
-	background-image: url("../img/wood4.jpg");
+	background: #fff;
 }
 
 /* Green header */
 header{
-	background-image: url("wood3.jpg");
+	background-image: url("../img/wood4.jpg");
 	/*
 	background: #6ab47b;
 	border-color: #599a68;*/
@@ -234,7 +253,7 @@ header{
 
 /* Color for nav link*/
 nav{
-	background-image: url("wood3.jpg")	
+	background-image: url("../img/wood4.jpg")	
 }
 
 /* Logo text */
