@@ -144,8 +144,8 @@ PAGE: WHO AM I?
 
 .polaroid-images a{
 	background: white;
-	display: inline;
-	float: left;
+	display: inline-block;
+	float: center;
 	margin: 0 15px 30px;
 	padding: 10px 10px 25px;
 	text-align: center;
@@ -154,10 +154,10 @@ PAGE: WHO AM I?
 	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
 		box-shadow: 0 4px 6px rgba(0,0,0,.3);
 	-webkit-transition: all .15s linear;
-	-moz-transition: all .15s linear;
+	-.moz-transition: all .15s linear;
 	transition: all .15s linear;
 	z-index:0;
-    position: relative;	
+/*    position: relative;*/	
 }
 
 .polaroid-images a:after {
@@ -170,8 +170,10 @@ PAGE: WHO AM I?
 
 .polaroid-images img { 
 	display: block; 
+	float: center;
 	width: inherit; 
 }
+
 
 .polaroid-images a:nth-child(2n)
 {
@@ -219,12 +221,12 @@ COLORS
 
 /* Site body */
 body{
-	background-image: url("wood2.jpg");
+	background-image: url("../img/wood4.jpg");
 }
 
 /* Green header */
 header{
-	background-image: url("wood2.jpg");
+	background-image: url("wood3.jpg");
 	/*
 	background: #6ab47b;
 	border-color: #599a68;*/
@@ -232,7 +234,7 @@ header{
 
 /* Color for nav link*/
 nav{
-	background: #599a68;	
+	background-image: url("wood3.jpg")	
 }
 
 /* Logo text */
@@ -242,7 +244,7 @@ h1, h2 {
 
 /* Links */
 a{
-	color: #1B5E20;
+	color: #4CAF50;
 }
 
 /* Nav link*/
@@ -252,7 +254,7 @@ nav a, nav a:visited{
 
 /* Selected nav link*/
 nav a.selected, nav a:hover{
-	color: #1B5E20;
+	color: #4CAF50;
 }
 
 
