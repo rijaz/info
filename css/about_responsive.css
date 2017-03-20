@@ -7,13 +7,13 @@ CSS smaller then larger*/
 	TWO COLUMN LAYOUT
 	*****************************/
 	#primary{
-		width: 50%;
+		width: 58%;
 		float: left;
 	}
 
 	#secondary{
 		/*Don't want it to take up as much space*/
-		width: 40%;
+		width: 42%;
 		float: right;
 	}
 

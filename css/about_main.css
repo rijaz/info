@@ -15,6 +15,7 @@ body{
 }
 
 a{
+	/*Gets rid of link under links*/
 	text-decoration: none;
 }
 
@@ -104,49 +105,20 @@ nav a {
 	padding: 15px 10px;
 }
 
-
-
 /*****************************
-FOOTER
+TOP HALF
 *****************************/
-footer{
-	font-size: 0.75em;
-	text-align: center;
-	/*clear helps make the footer independent of anything
-	other*/
-	clear: both;
-	padding-top: 50px;
-	color: #ccc;
+
+.polarid-images p{
+	color: #fff;
+	font-size: 20em;
 }
-
-.social-icon{
-	width: 20px;
-	height: 20px;
-	margin: 0 5px;
-}
-
-
-/*****************************
-PAGE: WHO AM I?
-*****************************/
-/*
-.profile-photo{
-	/*Using block will alow us to use auto margins to center the element
-	on the page *//*
-	display: block;
-	max-width: 150px;
-	margin: 0 auto 30px;
-	/*Lets you add rounded corners in an element*/
-	/*border-radius: 100%;
-}
-*/
-
-
 .polaroid-images a{
 	background: white;
 	display: inline-block;
 	float: center;
-	margin: 0 15px 30px;
+	margin: 30px 15px 30px;
+	/*Top side bottem*/
 	padding: 10px 10px 15px;
 	text-align: center;
 	text-decoration: none;
@@ -201,18 +173,6 @@ PAGE: WHO AM I?
 	transform: rotate(-24deg); 
 }
 
-.polaroid-images a:nth-child(4n)
-{
-	-webkit-transform: rotate(14deg);  
-	-moz-transform: rotate(14deg); 
-	transform: rotate(14deg); 
-}
-.polaroid-images a:nth-child(5n)
-{
-	-webkit-transform: rotate(-18deg);  
-	-moz-transform: rotate(-18deg); 
-	transform: rotate(-18deg); 
-}
 
 .polaroid-images a:hover{
 	-webkit-transform: rotate(0deg); 
@@ -228,13 +188,54 @@ PAGE: WHO AM I?
 }
 	
 
+#bg p{
+	color: #fff;
+	font-size: 3.1em;
+	text-align: center;
+}
+
+/*****************************
+BOTTOM LEFT HALF
+*****************************/
+
+#primary a1{
+	color: #D50000;
+}
+
+
+#primary a3{
+	color: #916e45;
+}
+
+
+/*****************************
+FOOTER
+*****************************/
+footer{
+	font-size: 0.75em;
+	text-align: center;
+	/*clear helps make the footer independent of anything
+	other*/
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;
+}
+
+.social-icon{
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+
+
 
 /*****************************
 COLORS
 *****************************/
-
-.polaroid-images{
-	background-image: url(../img/wood4.jpg);
+#bg{
+    background-image: url(../img/wood4.jpg);
 }
 
 
@@ -245,7 +246,7 @@ body{
 
 /* Green header */
 header{
-	background-image: url("../img/wood4.jpg");
+	background:none;
 	/*
 	background: #6ab47b;
 	border-color: #599a68;*/
@@ -253,7 +254,7 @@ header{
 
 /* Color for nav link*/
 nav{
-	background-image: url("../img/wood4.jpg")	
+	background: none;	
 }
 
 /* Logo text */
@@ -263,7 +264,7 @@ h1, h2 {
 
 /* Links */
 a{
-	color: #4CAF50;
+	color: #B71C1C;
 }
 
 /* Nav link*/
