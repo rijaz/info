@@ -9,7 +9,7 @@ body{
 }
 
 #wrapper {
-	max-width: 940px;
+	max-width: 990px;
 	margin: 0 auto;
 	padding: 0 5%;
 }
@@ -109,7 +109,7 @@ nav a {
 TOP HALF
 *****************************/
 
-.polarid-images p{
+.polarid-images {
 	color: #fff;
 	font-size: 20em;
 }
@@ -117,8 +117,8 @@ TOP HALF
 	background: white;
 	display: inline-block;
 	float: center;
-	margin: 30px 15px 30px;
-	/*Top side bottem*/
+	margin: 30px 15px 15px;
+	/*Top side bottom*/
 	padding: 10px 10px 15px;
 	text-align: center;
 	text-decoration: none;
@@ -190,7 +190,7 @@ TOP HALF
 
 #bg p{
 	color: #fff;
-	font-size: 3.1em;
+	font-size: 5em;
 	text-align: center;
 }
 
@@ -264,7 +264,7 @@ h1, h2 {
 
 /* Links */
 a{
-	color: #B71C1C;
+	color: #4CAF50;
 }
 
 /* Nav link*/

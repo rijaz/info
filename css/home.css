@@ -128,19 +128,19 @@ COLORS
 
 /* Site body */
 body{
-	background-image: url("stars.jpg")
+	background-image: url("../img/stars.jpg")
 /*	background-color: #fff;
 	color: #999;*/
 }
 
 /* Green header */
 header{
-	background-image: url("stars.jpg");
+	background-image: url("../img/stars.jpg");
 }
 
 /* Color for nav link*/
 nav{
-	background-image: url("stars.jpg");	
+	background-image: url("../img/stars.jgpco");	
 }
 
 /* Logo text */
