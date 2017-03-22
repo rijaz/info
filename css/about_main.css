@@ -110,14 +110,14 @@ TOP HALF
 *****************************/
 
 .polarid-images {
-	color: #000;
-	font-size: 18em;
+	color: #fff;
+	font-size: 20em;
 }
 .polaroid-images a{
 	background: white;
 	display: inline-block;
 	float: center;
-	margin: 30px 15px 10px;
+	margin: 30px 15px 15px;
 	/*Top side bottom*/
 	padding: 10px 10px 15px;
 	text-align: center;
@@ -190,7 +190,7 @@ TOP HALF
 
 #bg p{
 	color: #fff;
-	font-size: 5em;
+	font-size: 3em;
 	text-align: center;
 }
 
