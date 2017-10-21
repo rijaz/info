@@ -4,7 +4,7 @@
 GENERAL
 *****************************/
 
-body{
+body, html{
 	font-family: 'Permanent Marker', cursive;
 }
 
@@ -236,6 +236,10 @@ COLORS
 *****************************/
 #bg{
     background-image: url(../img/wood4.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
