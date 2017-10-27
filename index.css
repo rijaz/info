@@ -19,7 +19,7 @@ body, html{
 }
 
 .bg1{
-	background-image: url("img/self.jpg");
+	background-image: url("./img/self.jpg");
 	min-height: 100%;
 }
 
