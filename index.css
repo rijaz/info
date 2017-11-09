@@ -7,6 +7,21 @@ body, html{
 	background-color: #fff;
 }
 
+a.link, a.link:visited{
+  text-decoration: none;
+  color: #777;
+}
+
+a.link:hover{
+  background-color: #111;
+  text-decoration-color: white;
+  opacity: 0.7;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+
 
 /**Settings for class bg**/
 .bg1, .bg2{
@@ -52,15 +67,14 @@ body, html{
 	min-height: 50%;
 	max-width: 940px;
 	margin: 0 auto;
-	padding: 0 5%;
 }
-
 
 
 #left {
     float:left;
     padding: 10px;
 }
+
 
 #right
 {
@@ -117,6 +131,42 @@ h3 {
   font: 25px "Lato", sans-serif;
   color: #111;
 }
+
+
+.title{
+  padding-top: 30px;
+  font-size: x-large;
+  font-color: black;
+}
+
+.p-info{
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid #777;
+}
+
+
+
+footer{
+  font-size: 0.75em;
+  text-align: center;
+  /*clear helps make the footer independent of anything
+  other*/
+  clear: both;
+  padding-top: 50px;
+  color: #ccc;
+}
+
+.social-icon{
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
 
 
 /* Turn off parallax scrolling for tablets and phones */

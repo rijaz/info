@@ -1,0 +1,284 @@
+/*Validator: jigsaw.w3.org/css-validator*/
+
+/*****************************
+GENERAL
+*****************************/
+
+body{
+	font-family: 'Permanent Marker', cursive;
+}
+
+#wrapper {
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+a{
+	/*Gets rid of link under links*/
+	text-decoration: none;
+}
+
+img {
+	/*Tells images to fill the width of their parent container
+	If container skrinks, image will also.*/
+	max-width: 100%;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+}
+
+
+/*****************************
+HEADING
+*****************************/
+header {
+	/*Helps with desktop layout*/
+	float: left;
+	/*Top right bottom left*/
+	margin: 0 0 30px 0;
+	/*Separates text without removing margin from top of 
+	page*/
+	padding: 5px 0 0 0;
+	/*So element stretches across entire page*/
+	width: 100%;
+}
+
+#logo{
+	text-align: center;
+	margin: 0;
+}
+
+h1{
+	font-family:'Calligraffitti', cursive;
+	margin: 15px 0;
+	/*Font size is relative to default font 
+	size in the browser (its a multiplier)*/
+	font-size: 1.75em;
+	/*Headers are bold by default. This unbolds it*/
+	font-weight: normal;
+	/*The spacing between lines*/
+	line-height: 0.8em;
+}
+
+h2{
+	/*Header height*/
+	font-family:'Homemade Apple', cursive;
+	font-size: 0.75em;
+	/*The first value sets the top. 
+	Second: left and right
+	Third: Bottom
+	Negative makes elements tighter together
+	Original: -5*/
+	margin: -15px 0 0;
+	font-weight: normal;
+}
+
+
+
+
+/*****************************
+NAVIGATION
+*****************************/
+nav{
+	font-family: 'Homemade Apple', cursive;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px
+	padding: 0;
+}
+
+nav li{
+	/*Every element has a display property
+	default is either set to block or inline*/
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+/*****************************
+TOP HALF
+*****************************/
+
+.polarid-images {
+	color: #fff;
+	font-size: 20em;
+}
+.polaroid-images a{
+	background: white;
+	display: inline-block;
+	float: center;
+	margin: 30px 15px 15px;
+	/*Top side bottom*/
+	padding: 10px 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+		box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-.moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+    position: relative;	
+}
+
+.polaroid-images a:after {
+	color: #333;
+	font-size: 15px;
+	content: attr(title);
+	position: relative;
+	line-height: 1
+	top:0px;
+}
+
+.polaroid-images img { 
+	display: block; 
+	float: center;
+	width: inherit; 
+}
+
+.polaroid-images a:nth-child(n)
+{
+	-webkit-transform: rotate(-10deg);  
+	-moz-transform: rotate(-10deg); 
+	transform: rotate(-10deg); 
+}
+
+.polaroid-images a:nth-child(2n)
+{
+	-webkit-transform: rotate(4deg);  
+	-moz-transform: rotate(4deg); 
+	transform: rotate(4deg); 
+}
+
+.polaroid-images a:nth-child(2n)
+{
+	-webkit-transform: rotate(4deg);  
+	-moz-transform: rotate(4deg); 
+	transform: rotate(4deg); 
+}
+.polaroid-images a:nth-child(3n) { 
+	-webkit-transform: rotate(-24deg);  
+	-moz-transform: rotate(-24deg); 
+	transform: rotate(-24deg); 
+}
+
+
+.polaroid-images a:hover{
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+	-webkit-transform: scale(3.2); 
+	-moz-transform: scale(1.2);
+        transform: scale(1.2);
+	z-index:10;
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+}
+	
+
+#bg p{
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+}
+
+/*****************************
+BOTTOM LEFT HALF
+*****************************/
+
+#primary a1{
+	color: #D50000;
+}
+
+
+#primary a3{
+	color: #916e45;
+}
+
+
+/*****************************
+FOOTER
+*****************************/
+footer{
+	font-size: 0.75em;
+	text-align: center;
+	/*clear helps make the footer independent of anything
+	other*/
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;
+}
+
+.social-icon{
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+
+
+
+/*****************************
+COLORS
+*****************************/
+#bg{
+    background-image: url(../img/wood4.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Site body */
+body{
+	background: #fff;
+}
+
+/* Green header */
+header{
+	background:none;
+	/*
+	background: #6ab47b;
+	border-color: #599a68;*/
+}
+
+/* Color for nav link*/
+nav{
+	background: none;	
+}
+
+/* Logo text */
+h1, h2 {
+	color: #fff;
+}
+
+/* Links */
+a{
+	color: #4CAF50;
+}
+
+/* Nav link*/
+nav a, nav a:visited{
+	color: #fff;
+}
+
+/* Selected nav link*/
+nav a.selected, nav a:hover{
+	color: #4CAF50;
+}
+
+

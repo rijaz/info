@@ -1,0 +1,50 @@
+/*Needs to be in this order becasue of cascading nature of 
+CSS smaller then larger*/
+/*Want to target digital screen instead of print media*/
+/*480 is standard for smartphones in landscapes*/
+@media screen and (min-width: 480px) {
+	/*****************************
+	TWO COLUMN LAYOUT
+	*****************************/
+	#primary{
+		width: 58%;
+		float: left;
+	}
+
+	#secondary{
+		/*Don't want it to take up as much space*/
+		width: 42%;
+		float: right;
+	}
+
+
+/*Large tablets and normal sized desktops*/
+@media screen and (min-width: 660px) {
+	/*****************************
+	HEADER
+	*****************************/
+	nav{
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+	}
+
+	#logo{
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+
+	h1{
+		font-size: 2.5em;
+	}
+
+	h2{
+		font-size: 0.825em;
+		/*margin-bottom: 20px;*/
+	}
+}
