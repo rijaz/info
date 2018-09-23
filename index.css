@@ -7,6 +7,11 @@ body, html{
 	background-color: #fff;
 }
 
+a{
+  text-decoration: none;
+  color: #777;
+}
+
 a.link, a.link:visited{
   text-decoration: none;
   color: #777;
@@ -90,6 +95,13 @@ a.link:hover{
 	padding: 0px;
 }
 
+.col2{
+	float: left;
+	width: 40%;
+	margin-right: 40px;
+	padding: 0px;
+}
+
 .columns:after{
 	content:"";
 	display: table;
@@ -98,6 +110,12 @@ a.link:hover{
 
 
 .col ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.col2 ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -157,14 +175,14 @@ footer{
   /*clear helps make the footer independent of anything
   other*/
   clear: both;
-  padding-top: 50px;
+  padding-top: 70px;
   color: #ccc;
 }
 
 .social-icon{
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  margin: 0 3px;
 }
 
 

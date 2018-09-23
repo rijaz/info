@@ -38,7 +38,7 @@ header {
 	float: left;
 	/*Top right bottom left*/
 	margin: 0 0 30px 0;
-	/*Separates text without removing margin from top of 
+	/*Separates text without removing margin from top of
 	page*/
 	padding: 5px 0 0 0;
 	/*So element stretches across entire page*/
@@ -53,7 +53,7 @@ header {
 h1{
 	font-family:'Calligraffitti', cursive;
 	margin: 15px 0;
-	/*Font size is relative to default font 
+	/*Font size is relative to default font
 	size in the browser (its a multiplier)*/
 	font-size: 1.75em;
 	/*Headers are bold by default. This unbolds it*/
@@ -66,7 +66,7 @@ h2{
 	/*Header height*/
 	font-family:'Homemade Apple', cursive;
 	font-size: 0.75em;
-	/*The first value sets the top. 
+	/*The first value sets the top.
 	Second: left and right
 	Third: Bottom
 	Negative makes elements tighter together
@@ -129,7 +129,7 @@ TOP HALF
 	-.moz-transition: all .15s linear;
 	transition: all .15s linear;
 	z-index:0;
-    position: relative;	
+    position: relative;
 }
 
 .polaroid-images a:after {
@@ -141,44 +141,44 @@ TOP HALF
 	top:0px;
 }
 
-.polaroid-images img { 
-	display: block; 
+.polaroid-images img {
+	display: block;
 	float: center;
-	width: inherit; 
+	width: inherit;
 }
 
 .polaroid-images a:nth-child(n)
 {
-	-webkit-transform: rotate(-10deg);  
-	-moz-transform: rotate(-10deg); 
-	transform: rotate(-10deg); 
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
 }
 
 .polaroid-images a:nth-child(2n)
 {
-	-webkit-transform: rotate(4deg);  
-	-moz-transform: rotate(4deg); 
-	transform: rotate(4deg); 
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	transform: rotate(4deg);
 }
 
 .polaroid-images a:nth-child(2n)
 {
-	-webkit-transform: rotate(4deg);  
-	-moz-transform: rotate(4deg); 
-	transform: rotate(4deg); 
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	transform: rotate(4deg);
 }
-.polaroid-images a:nth-child(3n) { 
-	-webkit-transform: rotate(-24deg);  
-	-moz-transform: rotate(-24deg); 
-	transform: rotate(-24deg); 
+.polaroid-images a:nth-child(3n) {
+	-webkit-transform: rotate(-24deg);
+	-moz-transform: rotate(-24deg);
+	transform: rotate(-24deg);
 }
 
 
 .polaroid-images a:hover{
-	-webkit-transform: rotate(0deg); 
+	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
         transform: rotate(0deg);
-	-webkit-transform: scale(3.2); 
+	-webkit-transform: scale(3.2);
 	-moz-transform: scale(1.2);
         transform: scale(1.2);
 	z-index:10;
@@ -186,7 +186,7 @@ TOP HALF
 	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
         box-shadow: 0 10px 20px rgba(0,0,0,.7);
 }
-	
+
 
 #bg p{
 	color: #fff;
@@ -258,7 +258,7 @@ header{
 
 /* Color for nav link*/
 nav{
-	background: none;	
+	background: none;
 }
 
 /* Logo text */
@@ -280,5 +280,3 @@ nav a, nav a:visited{
 nav a.selected, nav a:hover{
 	color: #4CAF50;
 }
-
-
