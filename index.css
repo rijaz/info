@@ -9,6 +9,8 @@ body, html{
 a{
   text-decoration: none;
   color: #777;
+  transition-property: padding;
+  transition-duration: 0.2s;
 }
 
 a.link, a.link:visited{
@@ -151,7 +153,6 @@ h3 {
 
 .title{
   font-size: large;
-  font-color: black;
 }
 
 .wrapper2 {
