@@ -11,7 +11,7 @@ a{
   color: #777;
   position: relative;
   transition-property: padding;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 a.link:before {
@@ -52,7 +52,7 @@ a.link:hover{
 */
 a.resume_link:hover{
   text-decoration-color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -96,6 +96,47 @@ a.resume_link:hover{
   letter-spacing: 10px;
 }
 
+
+#fade_bg{
+  animation: fadein_bg 4s;
+  -moz-animation: fadein_bg 4s; /* Firefox */
+  -webkit-animation: fadein_bg 4s; /* Safari and Chrome */
+  -o-animation: fadein_bg 4s; /* Opera */
+}
+
+
+@keyframes fadein_bg {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:0.8;
+  }
+}
+@-moz-keyframes fadein_bg { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:0.8;
+  }
+}
+@-webkit-keyframes fadein_bg { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:0.8;
+  }
+}
+@-o-keyframes fadein_bg { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 0.8;
+  }
+}
 
 #fade {
   animation: fadein 4s;
