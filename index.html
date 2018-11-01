@@ -10,6 +10,26 @@
 		<link rel="icon" href="img/icon-r.png">
 		<link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+			function displayProj() {
+				var hide_btn = document.getElementById('more_proj');
+				hide_btn.setAttribute('hidden','true');
+				var projects = document.getElementsByClassName("wrapper2");
+				for (var p=0;p<projects.length;p++){
+					var x = projects[p];
+					if(x.hasAttribute('hidden')==true){
+						console.log(x)
+						x.removeAttribute('hidden');
+						x.setAttribute("id", "fade");	
+						x.style.animation = "fadein 1s";
+						console.log('done');
+
+					}
+				}
+				
+			}
+		</script>
+	
 	</head>
 	<body>
 		<div class="bg1" id="fade">
@@ -25,13 +45,16 @@
 			</section>
 			<section id="right">
 				<p>I am a student at <b>Boston University</b> expecting to graduate in 2018.
-				<br>
-				<br>
- 		 		As a software engineer, I love using my technical knowledge to build solutions to problems that arise in classrooms, personal projects and elsewhere. <b>My goal</b> is to continue building my skillset. I want to contribute my knowledge to help build efficient, streamlined software with awesome people who are willing to share their knowledge so I can improve and learn more.
- 		 		<br>
- 		 		<br>
- 		 		When I'm not working, I can be found watching Parks and Recreation, painting or curating my <a href="https://open.spotify.com/user/reda.ijaz/playlist/4fJtFCZnCr569BEwjJDPt9?si=Tl0DHWZqSUOELsU9YqLpNw"> perfect playlist </a>.
- 		 		</p>
+					<br>
+					<br>
+					As a software engineer, I love using my technical knowledge to build solutions to problems that arise in classrooms, personal projects and elsewhere. <b>My goal</b> is to continue building my skillset. I want to contribute my knowledge to help build efficient, streamlined software with awesome people who are willing to share their knowledge so I can improve and learn more.
+					<br>
+					<br>
+					When I'm not working, I can be found watching Parks and Recreation, painting or curating my <a href="https://open.spotify.com/user/reda.ijaz/playlist/4fJtFCZnCr569BEwjJDPt9?si=Tl0DHWZqSUOELsU9YqLpNw" target="_blank"> perfect playlist </a>.
+					<br>
+					<br>
+					<a href="Resume - Reda Ijaz.pdf" target="_blank" class="resume_link"><b>View My Resume &rarr;</b></a>	
+				</p>
 			</section>
 		</div>
 
@@ -66,9 +89,7 @@
 			</section>
 
 		</div>
-
 		</div>
-
 
 		<div class="bg2">
 			<div class="projects">
@@ -87,6 +108,20 @@
 				<span class="p-info"> CSS </span>
 			</section>
 		</div>
+
+
+		<div class="wrapper2">
+			<section id="left2">
+				<div class="title"><a href="#" download class="link"><b> Middle Earth Demography &#8594</b></a></div>
+			</section>
+			<section id="right2">
+				<div class="description"> Work in progress - a deeper look at the history and peoples that make up arguably epic fantasy series inspired by the <a href="https://www.kaggle.com/mokosan/lord-of-the-rings-character-data" target="_blank"> Kaggle dataset.</a> Character information was scraped from <a href="https://www.lotr.wikia.com" target="_blank"> LOTR Wikia  </a> using BeautifulSoup. </div>
+				<span class="p-info"> Python </span>
+				<span class="p-info"> BeautifulSoup </span>
+				<span class="p-info"> Jupyter Notebook </span>		
+			</section>
+		</div>
+
 
 		<div class="wrapper2">
 			<section id="left2">
@@ -112,70 +147,76 @@
 			</section>
 		</div>
 
-		<div class="wrapper2">
-			<section id="left2">
-				<div class="title"><a href="https://github.com/JGrishey/BUCS506-NDI" target="_blank" class="link"> <b> NDI Data Analysis &#8594</b></a></div>
-			</section>
-			<section id="right2">
-				<div class="description"> Discovers trends in the frequency and types of violence in news outlets. Data was collected through APIs and was classified using Linear SVC.</div>
-				<span class="p-info"> Python </span>
-				<span class="p-info"> Jupyter Notebook </span>
-			</section>
+		<div class="wrapper3" id="more_proj">
+			<button onclick="displayProj()">View More</button>
 		</div>
-
-
-		<div class="wrapper2">
-			<section id="left2">
-				<div class="title"><a href="Scraper.ipynb" download class="link"><b> Hotel Scraper &#8594</b></a></div>
-			</section>
-			<section id="right2">
-				<div class="description"> Python script that scrapes Booking.com for information (name, ratings, reviews) on hotels in Boston. Data is obtained using BeautifulSoup and saved in csv files. </div>
-				<span class="p-info"> Python </span>
-				<span class="p-info"> BeautifulSoup </span>
-				<span class="p-info"> Jupyter Notebook </span>		
-			</section>
-		</div>
-
-
-		<div class="wrapper2">
-			<section id="left2">
-				<div class="title"><a href="https://github.com/rijaz/a3" target="_blank" class="link"> <b> myshell &#8594</b></a></div>
-			</section>
-			<section id="right2">
-				<div class="description">  Implemented a basic shell called "myshell" to learn how a command interpreter works. Uses parser to interpret commands then uses fork/exec functions to create and execute them. </div>
-				<span class="p-info"> C </span>
-			</section>
-		</div>
-
-		<div class="wrapper2">			
-			<section id="left2">
-				<div class="title"><a href="https://github.com/csecor/T10" target="_blank" class="link"> <b> Couch Potato &#8594</b></a></div>
-			</section>
-			<section id="right2">
-				<div class="description"> Worked in a team of four to create a web app that allows users to search for platforms to watch movies on. </div>
-				<span class="p-info"> Python </span>
-				<span class="p-info"> Django </span>
-				<span class="p-info"> HTML </span>
-				<span class="p-info"> CSS </span>	
-			</section>
-		</div>
-
-		<div class="wrapper2">			
-			<section id="left2">
-				<div class="title"><a href="#" target="_blank" class="link"> <b> Personal Website V1 &#8594</b></a></div>
-			</section>
-			<section id="right2">
-				<div class="description"> The first version of my personal website built in 2015 as a way to learn more about web dev and design. </div>
-				<span class="p-info"> HTML </span>
-				<span class="p-info"> CSS </span>
-				<span class="p-info"> GitHub Pages </span>
-			</section>
-
-		</div>
+		
+		<div class="wrapper2" hidden>
+				<section id="left2">
+					<div class="title"><a href="https://github.com/JGrishey/BUCS506-NDI" target="_blank" class="link"> <b> NDI Data Analysis &#8594</b></a></div>
+				</section>
+				<section id="right2">
+					<div class="description"> Discovers trends in the frequency and types of violence in news outlets. Data was collected through APIs and was classified using Linear SVC.</div>
+					<span class="p-info"> Python </span>
+					<span class="p-info"> Jupyter Notebook </span>
+				</section>
+			</div>
+	
+	
+			<div class="wrapper2" hidden>
+				<section id="left2">
+					<div class="title"><a href="Scraper.ipynb" download class="link"><b> Hotel Scraper &#8594</b></a></div>
+				</section>
+				<section id="right2">
+					<div class="description"> Python script that scrapes Booking.com for information (name, ratings, reviews) on hotels in Boston. Data is obtained using BeautifulSoup and saved in csv files. </div>
+					<span class="p-info"> Python </span>
+					<span class="p-info"> BeautifulSoup </span>
+					<span class="p-info"> Jupyter Notebook </span>		
+				</section>
+			</div>
+	
+	
+			<div class="wrapper2" hidden>
+				<section id="left2">
+					<div class="title"><a href="https://github.com/rijaz/a3" target="_blank" class="link"> <b> myshell &#8594</b></a></div>
+				</section>
+				<section id="right2">
+					<div class="description">  Implemented a basic shell called "myshell" to learn how a command interpreter works. Uses parser to interpret commands then uses fork/exec functions to create and execute them. </div>
+					<span class="p-info"> C </span>
+				</section>
+			</div>
+	
+			<div class="wrapper2" hidden>			
+				<section id="left2">
+					<div class="title"><a href="https://github.com/csecor/T10" target="_blank" class="link"> <b> Couch Potato &#8594</b></a></div>
+				</section>
+				<section id="right2">
+					<div class="description"> Worked in a team of four to create a web app that allows users to search for platforms to watch movies on. </div>
+					<span class="p-info"> Python </span>
+					<span class="p-info"> Django </span>
+					<span class="p-info"> HTML </span>
+					<span class="p-info"> CSS </span>	
+				</section>
+			</div>
+	
+			<div class="wrapper2" hidden>			
+				<section id="left2">
+					<div class="title"><a href="#" target="_blank" class="link"> <b> Personal Website V1 &#8594</b></a></div>
+				</section>
+				<section id="right2">
+					<div class="description"> The first version of my personal website built in 2015 as a way to learn more about web dev and design. </div>
+					<span class="p-info"> HTML </span>
+					<span class="p-info"> CSS </span>
+					<span class="p-info"> GitHub Pages </span>
+				</section>
+	
+			</div>
+		
 
 		<footer>
-			<a href="https://www.linkedin.com/in/reda-ijaz-782302127/"><img src="img/linkedin.png" alt="Linkedin Logo Logo" class="social-icon"></a>
-			<a href="https://github.com/rijaz"><img src="img/git.jpg" alt="Github Logo" class="social-icon"></a>
+			<a href="mailto:redaijz@gmail.com" target="_blank"><img src="img/email.png" alt="EmailMe" class="social-icon"></a>
+			<a href="https://www.linkedin.com/in/reda-ijaz-782302127/" target="_blank"><img src="img/linkedin.png" alt="Linkedin Logo Logo" class="social-icon"></a>
+			<a href="https://github.com/rijaz" target="_blank"><img src="img/git.jpg" alt="Github Logo" class="social-icon"></a>
 
 		</footer>
 	</body>
